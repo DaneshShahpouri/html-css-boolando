@@ -97,10 +97,6 @@ main .card_wrapper{
 }
 
 /* Immagini */
-.card_wrapper .card:hover .img_hover{
-    opacity: 1;
-}
-
 .card .container_img{
     position: relative;
 }
@@ -115,6 +111,11 @@ main .card_wrapper{
     left: 0;
 
     opacity: 0;
+    transition: opacity 1s;
+}
+
+.card_wrapper .card:hover .img_hover{
+    opacity: 1;
 }
 
 /* TEXT */
@@ -216,8 +217,12 @@ footer .footer_text ul li{
 
 footer .footer_text ul li a{
     text-decoration: none;
-    color: white;
+    color: rgb(227, 227, 227);
     font-size: 0.8em;
+}
+
+footer .footer_text ul li a:hover{
+    color: white;
 }
 
 footer .social_section strong{
@@ -226,8 +231,11 @@ footer .social_section strong{
 
 footer .social_section .social_wrapper img{
     cursor: pointer;
-    filter: invert(1);
+    filter: invert(0.85);
     width: 20px;
+}
+footer .social_section .social_wrapper img:hover{
+    filter: invert(1);
 }
 
 footer .social_section .social_wrapper #pinterest{
