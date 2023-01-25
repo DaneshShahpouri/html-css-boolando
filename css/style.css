@@ -75,6 +75,7 @@ MAIN
 ---------------------------------------------------------- */
 main .main_inner{
     margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 main .card_wrapper{
@@ -111,7 +112,7 @@ main .card_wrapper{
     left: 0;
 
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 
 .card_wrapper .card:hover .img_hover{
